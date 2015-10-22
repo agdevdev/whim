@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Whim | The Non-framework Framework for CSS Enthusiasts.</title>
+<meta name="description" content="Whim is a mobile-first, design-agnostic, responsive HTML5/CSS3 boilerplate for the stylesheet minimalists of the world." />
+<link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+<!-- Initialize styles and fonts -->
+<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
+<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="style.css" rel="stylesheet">
+</style>
+
+</head>
+
+<body>
+
+<!-- Nav -->
+<div id="target"><span class="icon">&#xf0c9;</span></div>
+<nav class="main-menu">
+	<div class="inner">
+		<ul>
+			<li><a href="#two-col" class="scroll">Two Columns</a></li>
+			<li><a href="#three-col" class="scroll">Three Columns</a></li>
+			<li><a href="#four-col" class="scroll">Four Columns</a></li>
+			<li><a href="#sixty-forty" class="scroll">60/40 Split</a></li>
+			<li><a href="#typography" class="scroll">Typography</a></li>
+		</ul>
+	</div>
+</nav>
+
+<!-- Header -->
+<header>
+	<div class="inner">
+	<h1>Whim</h1>
+	<h2>The non-framework framework for CSS enthusiasts</h2>
+	</div>
+</header>
+
+<!-- Intro -->
+<section id="intro">
+	<div class="inner">
+		<div class="full">
+		<p>Whim is a curated selection of CSS3 styles and HTML5 layout snippets. These device-agnostic, mobile-first styles can be easily modified or overridden, and won't get in the way of your design.</p>
+		<a href="#" class="button">Download <span class="icon">&#xf019;</span></a>
+		</div>
+	</div>
+</section>
+
+<!-- Two Columns -->
+<section id="two-col">
+	<div class="inner">
+		<h3 class="section-header">Two Columns</h3>
+		<div class="half">
+			50% width
+		</div>
+		<div class="half">
+			50% width
+		</div>
+	</div>
+</section>
+
+<section id="three-col">
+	<div class="inner">
+		<h3 class="section-header">Three Columns</h3>
+		<div class="thirds">
+			33% width
+		</div>
+		<div class="thirds">
+			33% width
+		</div>
+		<div class="thirds">
+			33% width
+		</div>
+	</div>
+</section>
+
+<section id="four-col">
+	<div class="inner">
+		<h3 class="section-header">Four Columns</h3>
+		<div class="fourths">
+			25% width
+		</div>
+		<div class="fourths">
+			25% width
+		</div>
+		<div class="fourths">
+			25% width
+		</div>
+		<div class="fourths">
+			25% width
+		</div>
+	</div>
+</section>
+
+<section id="sixty-forty">
+	<div class="inner">
+		<h3 class="section-header">60/40 Split</h3>
+		<div class="sixty">
+			60% width
+		</div>
+		<div class="forty">
+			40% width
+		</div>
+	</div>
+</section>
+
+<section id="typography">
+	<div class="inner">
+		<h3 class="section-header">Typography</h3>
+		<div class="forty">
+			<h1>Heading 1</h1>
+			<h2>Heading 2</h2>
+			<h3>Heading 3</h3>
+			<h4>Heading 4</h4>
+			<h5>Heading 5</h5>
+			<h6>Heading 6</h6>
+		</div>
+		<div class="sixty">
+			<p>Here's an example paragraph. This template uses <a href="https://www.google.com/fonts/specimen/Roboto+Slab" target="_blank">Roboto Slab</a> as its main font face, and <a href="https://fortawesome.github.io/Font-Awesome/" target="_blank">Font Awesome</a> for the icons.</p>
+		</div>
+	</div>
+</section>
+
+<!-- Footer -->
+<footer>
+	<div class="inner">
+		<ul class="social">
+			<li><a href="https://twitter.com/HeavilyEdited" alt="Anne Gray on Twitter" target="_blank">&#xf099;</a></li>
+			<li><a href="http://careers.stackoverflow.com/heavilyedited" alt="Anne Gray on StackOverflow Careers" target="_blank">&#xf16c;</a></li>
+			<li><a href="https://www.linkedin.com/in/annejacksongray/" alt="Anne Gray on LinkedIn" target="_blank">&#xf0e1;</a></li>
+			<li><a href="https://dribbble.com/heavilyedited" alt="Anne Gray on Dribbble" target="_blank">&#xf17d;</a></li>
+		</ul>
+    	&copy; 2015 <a href="http://www.heavilyedited.com/" target="_blank">Heavily Edited</a>
+		<br/>anne@heavilyedited.com
+    </div>
+</footer>
+
+<!-- Scripts -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function () {
+	$('.scroll').on('click', function(e) {
+		$('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
+		e.preventDefault();
+	});
+	$('#target').on('click', function() {
+		$('.main-menu').toggleClass("expanded");
+	});
+});
+</script>    
+</body>
+</html>
